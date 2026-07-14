@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script 
+      type="module" 
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+  </head>
+  <body>
+
+    <header class="header">
+
+      <a href="#home" class="logo">
+         Data <span>Analysis</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <button class="gradiant-button">Contact Me</button>
+
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+         <h1>Welcome to <span>Mahmoud's</span> Space</h1>
+         <h3>I'm a <span>Data Analyst</span></h3>
+         <p>
+            Based in <span>Egypt</span>, I handle the entire data process — collecting, cleaning, analyzing, and transforming raw data into actionable insights and high-performance Power BI dashboards. With strong expertise in SQL, Python, and Excel, I help businesses improve performance, optimize operations, and make confident, data-driven decisions.
+         </p>
+
+         <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mahmoudabass2003/" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+         <a href="https://github.com/mahmoud-abass" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-github"></i>
+         </a>
+
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bhjkft500@gmail.com" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-gmail"></i>
+         </a>
+
+         <a href="https://wa.me/201028874593" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-whatsapp"></i>
+         </a>
+      </div>
+
+
+         <div class="btn-group">
+            <a href="Mahmoud_Mohamed_Abbas_CV.pdf" class="btn" target="_blank" rel="noopener noreferrer">See my CV</a>
+            <a href="#contact" class="btn">Contact</a>
+         </div>
+
+      </div>
+
+<!-- رائد فضاء 3D -->
+      <div class="home-img">
+         <div class="stars-bg"></div>
+         <model-viewer 
+            src="scene.gltf" 
+            alt="3D Astronaut"
+            auto-rotate 
+            camera-controls
+            autoplay 
+            style="width: 400px; height: 400px;"
+            rotation-per-second="60deg"
+         ></model-viewer>
+
+    </div>
+
+    </section>
+
+   <section class="about" id="about">
+      <div class="about-content">
+         <h2>About <span>Me</span></h2>
+         <p>
+            I’m <strong><span>Mahmoud Abbas</span></strong>, a <strong>Data Analyst</strong> graduated from the 
+            <strong>Faculty of <span>Computer Science</span> </strong> at 
+            <strong>Al Nahda University</strong>.<br><br>
+
+            Driven by a passion for turning complex datasets into meaningful insights, 
+            I specialize in <strong>statistical analysis</strong> and 
+            <strong>data visualization</strong>.<br><br>
+
+            With proficiency in tools such as 
+            <strong>Excel</strong>, <strong>Power BI</strong>, 
+            <strong>Python</strong>, <strong>SQL</strong>, etc... ,
+            I transform raw data into clear, actionable insights that support 
+            strategic decision-making.<br><br>
+
+            I’m always eager to explore new technologies, solve challenging problems, 
+            and deliver data-driven solutions that make a real impact.
+         </p>
+         <a href="#" class="btn">Read More</a>
+      </div>
+
+      <div class="about-img">
+         <img src="phh.jpeg" alt="Ziad Photo">
+      </div>
+   </section>
+
+
+   <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-container">
+         <div class="skill-box">
+               <i class="fa-solid fa-code"></i>
+               <h4>Coding</h4>
+               <div class="tools-logos">
+                  <img src="python-5.svg" alt="Python">
+                  <img src="psql.png" alt="SQL">
+                  <img src="r-lang.svg" alt="R">
+                  <img src="sas.jpg" alt="SAS">
+                  <img src="ml.jpg" alt="Machine Learning">
+            </div>
+         </div>
+
+         <div class="skill-box">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Visualization</h4>
+            <div class="tools-logos">
+               <img src="exc.svg" alt="Excel">
+               <img src="pbi.svg" alt="Power BI">
+               <img src="powerpoint-2.svg" alt="Power Point">
+               <img src="figma-icon.svg" alt="Figma">
+               <img src="mat.svg" alt="Matplotlib">
+               <img src="stream.svg" alt="Streamlit">
+            </div>
+         </div>
+
+         <div class="skill-box">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>AI & Cloud & Big data</h4>
+            <div class="tools-logos">
+               <img src="azure-2.svg" alt="Azure">
+               <img src="spark.png" alt="Apache Spark">
+               <img src="cgpt.png" alt="Chat GPT">
+               <img src="git-icon.svg" alt="Git">
+               <img src="github-icon-2.svg" alt="Github">
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="projects" id="projects">
+      <h2 class="heading">MY <span>Projects</span></h2>
+      <div class="projects-box">
+
+<a href="https://app.powerbi.com/links/LMuSFXu-w-?ctid=20469899-81d5-4769-9e25-47c0529b5747&pbi_source=linkShare" 
+   target="_blank" 
+   class="project-card">
+
+   <img src="dashboard1.png" alt="Sales Dashboard">
+
+   <div class="project-overlay">
+      <h3>Hospital Dashboard</h3>
+   </div>
+
+</a>
+        
+<a href="https://app.powerbi.com/links/LMuSFXu-w-?ctid=20469899-81d5-4769-9e25-47c0529b5747&pbi_source=linkShare" 
+   target="_blank" 
+   class="project-card">
+
+   <img src="dashboard2.png" alt="Sales Dashboard">
+
+   <div class="project-overlay">
+      <h3>Blinkit Dashboard</h3>
+   </div>
+
+</a>
+        
+<a href="https://app.powerbi.com/links/LMuSFXu-w-?ctid=20469899-81d5-4769-9e25-47c0529b5747&pbi_source=linkShare" 
+   target="_blank" 
+   class="project-card">
+
+   <img src="dashboard5.png" alt="Sales Dashboard">
+
+   <div class="project-overlay">
+      <h3>Supply Chain & Logistic Dashboard</h3>
+   </div>
+
+</a>
+           
+
+         
+      </div>
+   </section>
+
+   <section class="certifications" id="certifications">
+
+   <h2 class="heading">My <span>Certifications</span></h2>
+
+   <div class="projects-box">
+
+      <!-- Certification 1 -->
+      <a href="https://www.coursera.org/account/accomplishments/professional-cert/0CDNGQDJXLRK" target="_blank" class="project-card">
+
+         <img src="certificate1.png" alt="Microsoft Power BI Data Analyst">
+
+         <div class="project-overlay">
+            <h3>Microsoft Power BI Data Analyst</h3>
+         </div>
+
+      </a>
+
+
+      <!-- Certification 2 -->
+      <a href="https://www.coursera.org/account/accomplishments/specialization/R8XB2RK5PBA0" target="_blank" class="project-card">
+
+         <img src="certificate2.png" alt="Machine Learning">
+
+         <div class="project-overlay">
+            <h3>Machine Learning</h3>
+         </div>
+
+      </a>
+
+
+      <!-- Certification 3 -->
+      <a href="https://www.linkedin.com/posts/mahmoudabass2003_machine-learning-training-program-at-nti-activity-7404237434315730945-gvRf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEryHBkBOc_839lZ2OfDTJEzvaE4RQkbUZ4" target="_blank" class="project-card">
+
+         <img src="certificate3.png" alt="Machine Learning">
+
+         <div class="project-overlay">
+            <h3>Machine Learning at NTI</h3>
+         </div>
+
+      </a>
+
+   </div>
+   <div class="see-more">
+   <a href="certifications.html" class="btn" target="_blank">See More</a>
+</div>
+
+</section>
+
+   <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="https://formspree.io/f/mjgavqkd" method="POST">
+      <div class="input-group">
+         <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+         </div>
+         <div class="input-box">
+            <input type="number" name="phone" placeholder="Phone Number">
+            <input type="text" name="subject" placeholder="Subject">
+         </div>
+      </div>
+
+      <div class="input-group-2">
+         <textarea name="message" placeholder="Your Message" required></textarea>
+         <input type="submit" value="Send Message" class="btn">
+      </div>
+      </form>
+
+      </div>
+   </section>
+
+   <footer class="footer">
+         <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mahmoudabass2003/" target="_blank" rel="noopener noreferrer">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+
+            <a href="https://github.com/mahmoud-abass" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bhjkft500@gmail.com" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-gmail"></i>
+            </a>
+
+            <a href="https://wa.me/201028874593" target="_blank" rel="noopener noreferrer">
+               <i class="bx bxl-whatsapp"></i>
+            </a>
+         </div>
+
+         <ul class="list">
+            <li>
+               <a href="#">FAQ</a>
+            </li>
+         </ul>
+
+         <p>&copy; 2026 Mahmoud Abbas All rights reserved.</p>
+   </footer>
+
+
+
+
+  </body>
+</html>

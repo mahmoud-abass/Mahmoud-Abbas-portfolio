@@ -1,0 +1,898 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", orbitron;
+}
+
+:root {
+  --bg-color: #000000;
+  --second-bg-color: #131212;
+  --text-color: rgb(255, 255, 255);
+  --main-color: #d0ff00;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 3rem 12%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+   
+}
+
+#menu-icon {
+   font-size: 3.5rem;
+   color: var(--main-color);
+   display: none;
+
+   }
+
+.logo {
+  font-size: 2.5rem;
+   font-family: orbitron;
+  font-weight: 800;
+  color: var(--text-color);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+span {
+  background: linear-gradient(
+   270deg,
+   #32f906 20%,
+   #d0ff00 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar a{
+   font-size: 1.5rem;
+   margin-left: 3rem;
+   color: var(--text-color);
+   font-weight: 500;
+   transition: 0.3s ease-in-out;
+   border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+   color: var(--main-color);
+   border-bottom: 2px solid var(--main-color);
+}
+
+.gradiant-button {
+   font-size: 1.3rem;
+   padding: 1rem 1rem;
+   border-radius: 3rem;
+   background: linear-gradient(
+      270deg,
+      #32f906 20%,
+      #d0ff00 100%
+   );
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #000000;
+  border: none;
+  text-wrap: nowrap;
+ 
+}
+
+.gradiant-button:hover {
+   transform: scale(1.1);
+}
+
+/* =======================
+   SECTION SETTINGS
+======================= */
+.home, .about, .skills, .myprojects, .contact {
+  min-height: 100vh;
+  display: flex;
+  padding: -0.8rem 12%;
+}
+
+
+
+
+/* =======================
+   HOME SECTION
+======================= */
+.home {
+  min-height: 110vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10%;
+  position: relative;
+  overflow: hidden;
+  margin: -1rem 0;
+  margin-top: -5rem;
+}
+
+
+/* =======================
+   HOME CONTENT
+======================= */
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.home-content h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-top: 15rem;
+  line-height: 1.2;
+}
+
+.home-content h3 {
+  font-size: 3.2rem;
+  margin: 1rem 0;
+}
+
+.home-content p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 600px; /* علشان النص مايبقاش عريض أوي */
+}
+
+/* =======================
+   HOME IMAGE
+======================= */
+
+.home-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 3rem 4rem;
+  transform: translateX(40px);
+}
+
+
+.home-img img {
+  width: 300px;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.3s ease-in-out;
+  margin-top: 10rem;
+}
+
+.home-img img:hover {
+  box-shadow: 
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+}
+
+.social-icons a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  color: var(--text-color);
+  margin: 3rem 0.5rem;
+  transition: 0.3s ease-in-out;
+}  
+
+.social-icons a:hover {
+  color: black;
+  background-color: var(--main-color);
+  transform: scale(1.1)translate(-5px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.btn-group {
+  display: flex;
+  gap: 1.4rem;
+  margin: 3rem 0;
+}
+
+.btn {
+   display: inline-flex;
+   padding: 1rem 2rem;
+   background-color: transparent;
+   border-radius: 3rem;
+   font-size: 1.8rem;
+   color: white;
+   border: 2px solid var(--main-color);
+   font-weight: 600;
+   transition: 0.3s ease-in-out;
+   margin-top: -4rem;
+}
+
+.btn:hover {
+   background-color: var(--main-color);
+   color: black;
+   transform: scale(1.08);
+   box-shadow: 0 0 25px var(--main-color);
+}
+
+.about{ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10rem;
+   background-color: var(--second-bg-color);
+   
+}
+
+.about-img img {
+   width: 60vh;
+   border-radius: 50%;
+   box-shadow: 0 0 10px var(--main-color);
+   transition: 0.3s ease-in-out;
+}
+
+.about-img img:hover {
+   box-shadow: 
+     0 0 25px var(--main-color),
+     0 0 50px var(--main-color);
+}
+
+.about-content h2 {
+   font-size: 7rem;
+   text-align: left;
+}
+
+.about-content p {
+   font-size: 1.60rem;
+   line-height: 1.3;
+   margin: 2rem 0.5rem;
+   max-width: 700px;
+}
+
+.about-content .btn{
+   margin-top: 1rem;
+   margin: 1rem 0;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+   background: var(--bg-color);
+}
+
+/* ===== heading ===== */
+.heading {
+  font-size: 7rem;
+  margin: 0 auto 5rem auto; /* تخليها في النص مع مساحة تحت */
+  text-align: center;       /* مركز النص */
+  display: block;
+  width: 100%;              /* تملأ عرض السكشن */
+}
+
+.skills {
+  background-color: var(--bg-color);
+  padding: 10rem 10%;
+  color: var(--text-color);
+  position: relative;
+  text-align: center;
+  display: block;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;  /* يخليهم في النص */
+  align-items: center;  /* يخليهم فوق شوية */
+  gap: 3rem;
+  flex-wrap: nowrap; /* يخليهم جمب بعض مش تحت بعض */
+}
+
+.skill-box {
+  width: 30%; /* يخلي كل صندوق ياخد تلت الصفحة تقريبًا */
+  min-width: 300px;
+  height: 300px; /* أطول من العرض */
+  background: #000000;
+  border: 2px solid var(--main-color);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 255, 85, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.skill-box i {
+  font-size: 4rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.skill-box h4 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.tools-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tools-logos img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+}
+
+.tools-logos img:hover {
+  transform: scale(1.2);
+
+}
+
+/* تخصيص للوجو SAS */
+.tools-logos img[alt="SAS"] {
+  transform: scale(1.50); /* أكبر شوية افتراضيًا */
+}
+
+/* عند المرور عليه كمان */
+.tools-logos img[alt="SAS"]:hover {
+  transform: scale(1.70); /* يكبر أكتر عند الوقوف */
+}
+
+.tools-logos img[alt="Machine Learning"] {
+  transform: scale(1.10);
+  margin: 0.5rem; /* أكبر شوية افتراضيًا */
+}
+
+.tools-logos img[alt="Machine Learning"]:hover {
+  transform: scale(1.50); /* يكبر أكتر عند الوقوف */
+}
+
+
+
+
+.projects{
+  background-color: var(--second-bg-color);
+  margin: 2rem 0;
+}
+
+.projects-box {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+   gap: 2rem;
+   place-items: center;
+   justify-content: center;
+   row-gap: 3rem;
+}
+
+.project-card{
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 230px;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+/* Hover Effect */
+.project-card:hover img{
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.project-overlay{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.project-overlay h3{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.project-card:hover .project-overlay{
+  opacity: 1;
+}
+
+/* Glow effect */
+.project-card:hover{
+  box-shadow:
+  0 0 10px var(--main-color),
+  0 0 30px var(--main-color);
+}
+
+.project-card .btn {
+   margin-top: 1rem;
+}
+
+.certifications{
+  background-color: var(--second-bg-color);
+  margin: 2rem 0;
+  margin-top: 12rem;
+   margin-bottom: 0rem;
+}
+.cert-page .certifications{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.see-more{
+   display: flex;
+   justify-content: center;
+   margin-top: 7rem;
+
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* يخلي كل المحتوى في النص أفقيًا */
+  justify-content: center;
+  background-color: var(--bg-color);
+  padding: 3rem 0;
+}
+
+.contact h2 {
+  color: var(--text-color);
+  margin-bottom: 20rem;
+  text-align: center;
+}
+
+.contact form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 4rem;
+   margin-top: -16rem;
+} 
+
+.contact form .input-box input,
+.contact form textarea {
+  box-sizing: border-box;
+  width: 100%;            /* يشغل كامل عرض الحاوية */
+  max-width: 300px;       /* إذا كنت تفضل حد أقصى للعرض */
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  outline: none;
+}
+
+.contact form textarea {
+  height: 200px; /* أو أي ارتفاع تحبه */
+  resize: none; /* يمنع المستخدم من تغيير الحجم لو مش عايز */
+}
+
+
+.contact .btn {
+   margin: 0.5rem;
+}
+
+.footer {
+   text-align: center;
+   padding: 1px 0;
+   background-color: var(--second-bg-color);
+}
+
+.footer .social-icons{
+  text-align: center;
+}
+
+.footer ul{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.footer ul li{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer ul li a{
+  color: var(--text-color);
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+  border-bottom: 3px solid var(--main-color);
+}
+
+.footer .copyright{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/* 🌌 خلفية النجوم */
+.stars-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 115%;
+  z-index: 0; /* 👈 تخلي النجوم تحت كل حاجة */
+  pointer-events: none; /* علشان ما تأثرش على الضغط على الحاجات فوقها */
+  overflow: hidden;
+}
+
+
+/* ✨ شكل النجوم */
+.stars-bg::before,
+.stars-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 200%;
+  background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  opacity: 1.2;
+  animation: moveStars 130s linear infinite, twinkle 4s ease-in-out infinite;
+
+}
+
+.stars-bg::after {
+  opacity: 0.8;
+  animation-duration: 150s;
+}
+
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-400px, -400px); }
+}
+
+/* 🌟 لمعان النجوم */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.6; filter: brightness(1); }
+  50% { opacity: 1; filter: brightness(1.6); }
+}
+
+
+
+
+
+
+
+
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+@media (max-width: 768px) {
+
+  #menu-icon {
+    display: block;
+  }
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 2rem;
+    height: 100vh;
+    background: var(--bg-color);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+
+.navbar a {
+    display: block;
+    margin: 3rem 0;
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+.gradiant-button {
+    display: none;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content p {
+    font-size: 1.4rem;
+  }
+
+  .home-img img {
+    width: 250px;
+  }
+
+
+
+  .contact form {
+    flex-direction: column;
+  }
+
+  .skills-container {
+    flex-direction: column; /* يخليهم تحت بعض */
+    align-items: center;
+  }
+
+  .skill-box {
+    width: 90%; /* يملأ أغلب الشاشة */
+    height: auto; /* يخلي الطول مرن */
+  }
+
+  .heading {
+    font-size: 4rem; /* تصغير العنوان */
+  }
+
+  .tools-logos img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .projects-box{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card{
+    width: 80%;
+  }
+}
+
+/* للشاشات المتوسطة (تابلت أقل من 1024px) */
+@media (max-width: 768px) {
+  .skill-box {
+    width: 45%; /* صندوقين في الصف بدل 3 */
+  }
+
+  .heading {
+    font-size: 5rem;
+  }
+
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 60px 20px rgba(0, 255, 85, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 100px 40px rgba(0, 255, 85, 0.25);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 5rem;
+  }
+
+  .about-img img {
+    width: 55vw;
+    margin-top: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orbit, .glow, .animated {
+    animation: none !important;
+    box-shadow: none !important;
+  }
+}
+
+
+/* 📱 Tablet View */
+@media (min-width: 580px) and (max-width: 1024px) {
+
+  /* ضبط السكشن العام */
+  section {
+    padding: 6rem 5%;
+  }
+
+  /* about section */
+  .about {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 6rem;
+  }
+
+  .about-content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about-img img {
+    width: 50vw;
+  }
+
+  /* skills section */
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .skill-box {
+    width: 100%;
+    height: auto;
+  }
+
+  /* projects section */
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* footer */
+  footer {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
+
+.model-placeholder {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #00ff85 10%, #000 70%);
+  animation: pulse 1.5s infinite alternate;
+  margin: auto;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
